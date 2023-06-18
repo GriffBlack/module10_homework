@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        margin: auto;
+        padding: 10px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        width: 50vw;
+        min-height: 70vh;
+        border: solid 1px #315efb;
+        border-radius: 5px;
+
+    }
+
+    input {
+        width: -webkit-fill-available;
+        border: solid 2px #236192;
+        border-radius: 5px;
+
+    }
+
+    .area_input {
+        min-width: 200px;
+        max-width: auto;
+        line-height: 20px;
+
+    }
+
+    .head_main {
+        /* padding: 20px; */
+        margin: 20px 5px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        box-shadow: none;
+        cursor: pointer;
+        display: flex;
+        width: 150px;
+        max-height: 50px;
+        margin-left: 10px;
+        padding: 10px 0;
+        border-radius: 1px;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: white;
+        background: #315efb;
+        transition: 0.3s;
+        border-radius: 5px;
+
+    }
+
+    .btn:hover {
+        box-shadow: 0px 2px 8px 2px rgba(141, 150, 178, .3);
+        transform: scale(1.05);
+    }
+
+    .btn_text {
+        margin: auto;
+    }
+
+    .message_main {
+        min-height: 300px;
+        max-height: 100%;
+        margin: 5px;
+        border: solid 2px #236192;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 5px;
+        transition: all 0.5s ease-in;
+        overflow: auto;
+        flex-grow: 3;
+        border-radius: 10px;
+    }
+
+    p {
+        margin: auto
+    }
+
+    p {
+        margin: auto
+    }
+
+    .sender {
+        display: inline-block;
+        border: solid 2px #236192;
+        border-radius: 5px;
+        width: fit-content;
+        align-self: flex-end;
+        padding: 5px 15px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .server {
+        display: inline-block;
+        border: solid 2px #236192;
+        border-radius: 5px;
+        width: fit-content;
+        align-self: flex-start;
+        padding: 5px 15px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+
+    }
+
+    .geo_location {
+        min-width: fit-content;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="head_main">
+            <input class="area_input" type="text">
+            <button class="btn send">
+                <div class="btn_text"> Отправить </div>
+            </button>
+            <button class="btn btn_location">
+                <div class="btn_text"> Гео-локация </div>
+            </button>
+        </div>
+        <div class="message_main"></div>
+    </div>
+
+
+    <script src="./task_3.js"></script>
+</body>
+
+</html>
